@@ -322,4 +322,10 @@ header nav ul li a{
           margin-left: 120px;
       }
     
+    .greeting{
+        color: rgb(102, 3, 102);
+        border: 30px;
+        padding: 10px;
+        margin: 15px;
+    }
    
