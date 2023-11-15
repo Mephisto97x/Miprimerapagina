@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ol, ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(99, 78, 78);
+    padding: 25px;
+}
+
+header i{
+    font-size: 2.5em;
+    color: white;
+}
+
+header nav ul{
+    display: flex;
+    gap: 1.5em;
+
+}
+
+header nav ul li a{
+    color:white;
+    font-size: 1.5em;
+}
+
+.foto-perfil{
+    width: 450px;
+    border-radius: 15em;
+    height: 400px;
+   padding: 10px;
+   margin-right: 70;
+}
+.acerca-imagen {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 100px;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: 15em;
+}
+.parrafo1 {
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+        font-family: cursive;
+        letter-spacing: 0.04em;
+        font-weight: 600;
+    }
+
+    .acerca-de {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 12em;
+        padding-right: 10px
+        
+    }
+
+    .imagen-luna{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        font-size: 40px;
+        font-family: 'Neuton';
+        font-weight: 20;
+    }
+    
+    .Luna{
+        width: 600px;
+        border-radius: 10em;
+        padding: 10px;
+    }
+
+    .tarjetas{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .tarjeta{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: grey;
+        width: 30%;
+
+    }
+
+    .imagen-tarjeta{
+        display: flex;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen-guts{
+        display: flex;
+        width: 70%;
+        height: auto;
+    }
+
+    button{
+        background-color: rgb(133, 131, 131);
+        border: none;
+        font-size: large;
+        color: red;
+        padding: 10px;
+    }
+    button a{
+        color: red;
+
+    }
+
+    .contenido h1{
+        margin: 30px;
+    }
+
+    .contenido p{
+
+        margin-top: 15px;
+    }
+    
+    a:hover{
+        color: black;
+    }
+    #check{
+        display: none;
+    }
+
+    .checkbtn{
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    @media(max-width: 750px){
+        header{
+            background-color: rgb(139, 139, 27);
+        }
+        .acerca-de{
+            text-align: center;
+        }
+        body{
+            background-color:grey;
+        }
+        .acerca-imagen{
+            margin-bottom: 20px ;
+        }
+        .checkbtn {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        #encabezado ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #884c4c;
+            top: 80px;
+            left: 100%;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        #check:checked ~ ul{
+            left: 0;
+            display: block;
+        }
+        #encabezado nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+
+        #encabezado nav ul li a{
+            font-size: 20px;
+        }
+        #check:checked ~ .checkbtn {
+            color: black;
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .form-header {
+        text-align: center;
+        background-color: #f6f7f8;
+        border: 1px solid #d6d9dc;
+        border-radius: 3px;
+      
+        width: 80%;
+        margin: 10px auto;
+        padding: 50px;
+      }
+      
+      .form-header h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      
+      
+      .formulario {
+        background-color: #f6f7f8;
+        border: 1px solid #d6d9dc;
+        border-radius: 3px;
+      
+        width: 80%;
+        padding: 50px;
+        margin: 30px 0 40px 0;
+      }
+    
+    .form-row {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      
+      .form-row input[type="text"] {
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+      }
+      
+      .form-row label {
+        margin-bottom: 3px;
+        text-align: initial;
+      }
+    
+      @media only screen and (min-width: 700px) {
+        .form-header {
+          padding: 50px;
+        }
+      
+        .form-row {
+          flex-direction: row;
+          align-items: flex-start;
+          margin-bottom: 20px;
+        }
+        .form-row input[type="text"] {
+          width: 250px;
+          height: initial;
+        }
+        .form-row label {
+          text-align: right;
+          width: 120px;
+          margin-top: 7px;
+          padding-right: 20px;
+        }
+      }
+    
+      .form-row input [type="text"],
+      .form-row input [type="email"] {
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+      }
+      .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #e40a0a;
+        background-color: #04070a;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #07101b;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row button {
+          margin-left: 120px;
+      }
+    
+   
